@@ -1,5 +1,5 @@
 // Shitrit, Jonathan
-// CS211  Section 52 hw 1
+// CS211  Section 52 hw 2
 #include <iostream>
 
 using namespace std;
