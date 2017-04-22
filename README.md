@@ -13,3 +13,7 @@ b = {3,4,5,1,2};
   In the example above, we have right shifted the array 3 positions to the right.
 Definition: Let a and b be two integer arrays of the same length. We say that they are “shift equivalent” if array a can be right shifted to create array b.
   Problem: Write a function bool equivalent(int a[], int b[], int n) which takes two arrays a and b of length n and returns true is they are shift equivalent and false otherwise.
+
+______________________________________________________________________________________________________________________________
+
+HW #3: Solve the 8 Queens problem using a 2 dimentional array, goto statements, and backtracking
