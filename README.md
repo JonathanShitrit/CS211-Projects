@@ -21,3 +21,7 @@ HW #3: Solve the 8 Queens problem using a 2 dimentional array, goto statements, 
 ______________________________________________________________________________________________________________________________
 
 HW #4: Solve the 8 Queens problem using a 1 dimentional array, goto statements, and backtracking.
+
+______________________________________________________________________________________________________________________________
+
+HW #5: Solve the 8 queens problem using a 1 dimensional array program with backtracking REMOVING ALL "GOTOs" - but implementing the same algorithm
