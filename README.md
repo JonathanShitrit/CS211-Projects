@@ -16,4 +16,8 @@ Definition: Let a and b be two integer arrays of the same length. We say that th
 
 ______________________________________________________________________________________________________________________________
 
-HW #3: Solve the 8 Queens problem using a 2 dimentional array, goto statements, and backtracking
+HW #3: Solve the 8 Queens problem using a 2 dimentional array, goto statements, and backtracking.
+
+______________________________________________________________________________________________________________________________
+
+HW #4: Solve the 8 Queens problem using a 1 dimentional array, goto statements, and backtracking.
