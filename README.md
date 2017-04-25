@@ -1,7 +1,7 @@
 # Queens College-CS211-Projects
 Algorithmic problem solving using C++
 
-______________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 HW #2: Equivalent Arrays
 
@@ -14,14 +14,21 @@ b = {3,4,5,1,2};
 Definition: Let a and b be two integer arrays of the same length. We say that they are “shift equivalent” if array a can be right shifted to create array b.
   Problem: Write a function bool equivalent(int a[], int b[], int n) which takes two arrays a and b of length n and returns true is they are shift equivalent and false otherwise.
 
-______________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 HW #3: Solve the 8 Queens problem using a 2 dimentional array, goto statements, and backtracking.
 
-______________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 HW #4: Solve the 8 Queens problem using a 1 dimentional array, goto statements, and backtracking.
 
-______________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 HW #5: Solve the 8 queens problem using a 1 dimensional array program with backtracking REMOVING ALL "GOTOs" - but implementing the same algorithm
+
+____________________________________________________________________________________________________________________________
+
+HW #7: Write a program which allocates the integers 1-8 in a cross, subject to the restrictions that no two adjacent squares contain consecutive integers.
+By adjacent we mean vertically, horizontally, or diagonally.
+
+____________________________________________________________________________________________________________________________
