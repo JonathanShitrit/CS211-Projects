@@ -68,3 +68,10 @@ ________________________________________________________________________________
 HW #9: Modify the Eight Queens program (1 dimensional array – no goto version) so that it prints out a chessboard with some “fancy” representation of a queen in the appropriate positions.
 1. Augment that code by adding two additional “box”es, wq which represents a picture of a queen placed in a “white” square, and bq, representing a picture of a queens placed in a “black” square.
 2. After the code that fills the array board[8][8] with the addresses of bb and wb, insert code to change eight entries in that array to reflect the positions of eight queens on the board. You will get these positions from a one dimensional array q[8] representing a solution to the eight queens problem. The change that you make in these eight places is to replace the pointer in board for one representing either a wq, or bq, as appropriate for that position. You know the eight positions because, given q[i], i represents the column and q[i] represents the row. You can tell whether its black or white by looking at the row and column indexes of its position on the board.
+
+____________________________________________________________________________________________________________________________
+
+HW #10: Implementing Numerical Integration Using Function Pointers
+Inside a loop we sum up the area of rectangles with a small base (say .0001) and height f(x) for each x between a and b in increments of .0001.
+When the loop terminates, we return the value of the sum.
+The purpose of this assignment is to see (and implement) a very simple application of function pointers.
