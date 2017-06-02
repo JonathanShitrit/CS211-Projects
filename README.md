@@ -145,5 +145,49 @@ Using the recursive eight queens as a model, redo
 the cross problem using recursion the stable marriage problem
 ____________________________________________________________________________________________________________________________
 
+HW #16: Write a program that inputs two integers n and k, where n>=k. Your program should calculate the number of different ways that k bishops could be placed on an nXn chessboard.
+Structure your program using the backtracking scheme that we have used for the eight queens problem. 
+____________________________________________________________________________________________________________________________
+
+HW #17: Shortest Path Problems
+1. Modify the code in the handout to include memoization. Modify it additionally so that it prints the actual shortest path as well as its cost. The path should be output as the sequence of rows to choose, going from left to right on the original cost array.
+2. Many dynamic programming problems may be solved quite simply from the “bottom up.” Write a program to solve the shortest path problem using a bottom up approach. The path should be output as the sequence of rows to choose, going from left to right on the original cost array.
+____________________________________________________________________________________________________________________________
+
+HW #18: Complete the Rat class
+Starting with the Rat class (see Handouts) do the following:
+1. Add the following operators to the class: operator-()
+operator*() operator/()
+2. Make sure Rats are reduced to lowest terms. So if a Rat is 2/4 it should be reduced to 1⁄2.
+3. If a Rat represents an “improper fraction” (i.e. numerator >denominator) print the Rat as a “mixed number.” So 6/4 will be printed as 1 1⁄2.
+____________________________________________________________________________________________________________________________
+HW #19: This assignment involves computing continued fractions, and contains three parts. The general form of a continued fraction is:
+  where a0 is an integer, all other ai are positive integers, and n is a non-negative integer. We can
+ specify a continued fraction by an array of integers containing the values a0 ... an.
+ 1. Write a function that takes an array of integers as specified above (and ending with a -1) and
+ returns the value of the fraction as a double.
+ 
+2. Write a function that takes an array of integers as specified above (and ending with a -1). Your
+function will represent the value of the continued fraction as a “regular” fraction, p/q, in lowest
+terms. We are looking for the result of doing the fractional arithmetic and keeping everything in
+integers as we work our way through. The function returns a 2-element integer array, v, with
+v[0]=p and v[1]=q.
+ 3. Write recursive functions that, given the above representation of a continued fraction, returns
+  p and q such that p/q represent the value of the continued fraction as a “regular” fraction in
+ lowest terms, as in question 2 above.
 
 ____________________________________________________________________________________________________________________________
+
+HW #20: You did it! You got a coveted NSA (National Security Agency) internship because of your exceptional performance in CS211! But as you enter the office your supervisor frantically runs up to you and says that NSA needs you to solve a problem quickly.
+She tells you that an international criminal mastermind had been captured with n identical paper copies of a secret password (written as string of ones and zeros) that he was about to distribute to his lieutenants. But just as he was cornered by the police, he managed to rip each copy into two pieces and throw the ripped up papers out of the window. The police managed to retrieve all the papers, but the problem is that the papers were not necessarily ripped up in the same place.
+Your task
+Your job is to take the papers and write a program to figure out what the original sequence was.
+If you can do it within the next hour, you will save the world.
+You’re not quite sure how this will save the world, or why a time limit of an hour is specified. Out of earshot of the supervisor, the other programmers tell you that your supervisor made up the whole story to get you to solve the problem as quickly as possible. What really happened was that someone in the office pulled a prank on senior management, and changed the code on the lock of the executive bathroom. The sequence on the torn papers is the new code to the bathroom door ...
+Whatever the truth is, you still need to solve the problem. If you do it, you will be a hero; if you don’t, well, your internship and recommendation might be on the line.
+The input
+Here are the torn papers: 011
+0111
+01110
+111 0111 10111 Caveat
+Your supervisor told you that (just in case it happens again) your program should work for any number of torn papers conforming to the story above. Go figure.
