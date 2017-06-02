@@ -75,3 +75,75 @@ HW #10: Implementing Numerical Integration Using Function Pointers
 Inside a loop we sum up the area of rectangles with a small base (say .0001) and height f(x) for each x between a and b in increments of .0001.
 When the loop terminates, we return the value of the sum.
 The purpose of this assignment is to see (and implement) a very simple application of function pointers.
+
+____________________________________________________________________________________________________________________________
+
+HW #11: Stable Marriage Using Backtracking
+You have n men and n woman, and their preference rankings of each other, and you need to match them up so that the total matching is “stable.”
+The preference rankings:
+You are given 2 n X n arrays, mp (men’s preference) which gives the men’s ranking of the
+women, and wp (women’s preference) which gives the women’s ranking of the men.
+So mp[i][j] gives man i's ranking of woman j and likewise for the women’s ranking of the men in
+wp.
+For example in the following tables we have n=3 and the women and men are “named” 0, 1 or 2 and the raking are in the range 0 = highest, 1 second highest and 2 lowest.
+int mp[3][3]={0,2,1, 0,2,1,
+1,2,0};
+int wp[3][3]={2,1,0, 0,1,2,
+2,0,1};
+So man 1 assigns woman 2 the rank of 1 (i.e. second highest) and prefers woman 0 the best.
+What is a stable matching?
+A matching is stable if there are no “instabilities.” Say the match assigns m1 to w1 and m2 to w2. An instability is the situation where there is a mutual greater preference for the other person’s partner than for one’s own. For example m1 would prefer w2 to w1 and likewise w2 prefers m1 to m2.
+How to do it:
+Use the same approach that we used for the one dimensional eight queens problem. In the array q, q[i] is the woman assigned to man i.
+The main program stays the same, besides the limits on the loops. All that needs to change is the ok function. Is could look something like this:
+bool ok(int q[], int col) {
+col indicates the new man and q[col] the new woman proposed to be added to the match.
+We need to do 2 tests:
+1. If the new woman has already been assigned to some man then return false
+2. Check the new pair (new man, new woman) against each existing pair consisting of (current man, current woman) to see if the new pair would make the match unstable. So
+a. if the current man prefers the new woman to his partner and
+b. if the new woman prefers the current man to her partner
+i. this is unstable, so return false
+c. if the new man prefers the current woman to his partner and d. if the current woman prefers the new man to her partner
+i. This is unstable, so return false
+e. if there are no instabilities introduced with any of the existing (i.e. “current”)
+ }
+couples, so we return true.
+____________________________________________________________________________________________________________________________
+
+HW #12: Solve for the 8 Queens problem using 8 for-loops a.k.a. Brute Force
+____________________________________________________________________________________________________________________________
+
+HW #13: By the “n queens problem” we mean the problem of placing n queens on an nXn “chessboard” in such a way that no queen can capture any other on the next move. In class we solved the “8 queens” problem.
+Write a function that inputs an integer n and returns the number of solutions to the “n queens” problem. Your function should use the one dimensional representation for the board, the algorithm we discussed in class, and no gotos.
+Test your function with a main program that prompts the user for an integer n. The main program then calls the function n times, once for each number from 1 – n, and then prints the number of solutions to each of these problems, one on a line.
+For example, if you enter n=5 your program should output:
+1. There are _____ solutions to the 1 queens problem. 2. There are _____ solutions to the 2 queens problem. 3. There are _____ solutions to the 3 queens problem. 4. There are _____ solutions to the 4 queens problem. 5. There are _____ solutions to the 5 queens problem.
+Now, since each time through the loop you will need an array q of a different length, you will need to allocate the array off of the heap
+____________________________________________________________________________________________________________________________
+
+HW #14: Using the algorithm discussed in class, write an iterative program to solve the Towers of Hanoi problem.
+The problem:
+You are given three towers a, b, and c. We start with n rings on tower a and we need to transfer them to tower b subject to the following restrictions:
+1. We can only move one ring at a time, and
+2. We may never put a larger numbered ring on top of a smaller numbered one.
+There are always 3 towers. Your program will prompt the user for the number of rings.
+Here is the algorithm.
+Definition: A ring is "available" if it is on the top of one of the towers.
+Definition: The "candidate" is the smallest available ring that has not been moved on the most recent move. The first candidate is ring 1.
+The Algorithm:
+1. Find the candidate.
+2. Move the candidate (right or left, depending if the number of rings is odd or even) to the closest tower on which it can be placed. Move "around the circle" if necessary.
+3. If not done, go back to step 1.
+The output should be a set of "commands" of the following form: "Move ring x from tower y to tower z" for each move.
+In addition, your program should take 2n-1 moves for any n.
+
+____________________________________________________________________________________________________________________________
+
+Hw #15: Redo using recursion
+Using the recursive eight queens as a model, redo
+the cross problem using recursion the stable marriage problem
+____________________________________________________________________________________________________________________________
+
+
+____________________________________________________________________________________________________________________________
